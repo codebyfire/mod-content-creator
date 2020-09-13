@@ -11,7 +11,7 @@ A Unity Package to help you build asset bundles for mods for The Colonists (http
 1. Create a new project in Unity
 1. Open the Package Manager (Window -> Package Manager)
 1. Add a package from git URL with `https://github.com/codebyfire/mod-content-creator.git` (Plus icon in the top left)
-1. Create a prefab for your in-game asset, naming it following the mod naming conventions (e.g. building_200). (Full info in external link TBC)
+1. Create a prefab for your in-game asset, naming it following the mod naming conventions (e.g. building_200). Currently supported are buildings, animals and resources. (Full docs TBC)
 1. Assign the prefab to an asset bundle name
 1. Open the Asset Bundle Builder panel (Tools -> Asset Bundle Builder)
 1. Enter the full path of your mod in the output directory
