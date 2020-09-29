@@ -34,6 +34,10 @@ public class AssetBundleBuilder : EditorWindow {
     
     
     void BuildAllAssetBundles() {
+	    if (!AssetDatabase.IsValidFolder("Assets/AssetBundles")) {
+		    AssetDatabase.CreateFolder("Assets", "AssetBundles");
+	    }
+    
 	    var res = BuildPipeline.BuildAssetBundles("Assets/AssetBundles",
 		    BuildAssetBundleOptions.None,
 		    BuildTarget.StandaloneWindows);
